@@ -77,10 +77,6 @@ interface ApiResponse<T> {
 
 Now you can reuse this for any response shape — user, product, order, anything.
 
-## To summarize
-
-Generics let you write reusable code without losing type safety. Instead of writing the same logic for every type, or giving up and using `any`, you use `<T>` as a placeholder and let TypeScript figure out the actual type at the call site.
-
 ## Conclusion
 
 Once you get used to generics you'll start using them naturally whenever you need the same logic to work for different types. It's one of those things that feels confusing at first but makes a lot of sense once you actually write it yourself.

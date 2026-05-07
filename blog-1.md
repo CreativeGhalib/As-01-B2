@@ -70,6 +70,6 @@ function greetUser(value: unknown): string {
 
 The `value is User` part is what makes it a type guard. When the function returns `true`, TypeScript treats the value as a `User` inside that block.
 
-## To summarize
+## Conclusion
 
 `any` skips all checks and can cause bugs that are hard to find. `unknown` keeps the safety but asks you to check the type first. Type narrowing is just the process of doing that check before using the value.
