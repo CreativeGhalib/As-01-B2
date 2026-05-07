@@ -4,11 +4,15 @@ const filterEvenNumbers = (numbers: number[]): number[] => {
 
 filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
+
+
 const reverseString = (input: string): string => {
   return input.split('').reverse().join('');
 };
 
 reverseString('typescript');
+
+
 
 type StringOrNumber = string | number;
 
@@ -22,12 +26,16 @@ const checkType = (value: StringOrNumber): 'String' | 'Number' => {
 checkType('Hello');
 checkType(42);
 
+
+
 const getProperty = <T, K extends keyof T>(obj: T, key: K): T[K] => {
   return obj[key];
 };
 
 const user = { id: 1, name: 'John Doe', age: 21 };
 getProperty(user, 'name');
+
+
 
 interface Book {
   title: string;
@@ -42,6 +50,8 @@ const toggleReadStatus = (book: Book): Book & { isRead: boolean } => {
 const myBook = { title: 'TypeScript Guide', author: 'Jane Doe', publishedYear: 2024 };
 
 toggleReadStatus(myBook);
+
+
 
 class Person {
   name: string;
@@ -68,6 +78,8 @@ class Student extends Person {
 
 const student = new Student('Alice', 20, 'A');
 student.getDetails();
+
+
 
 const getIntersection = <T>(arr1: T[], arr2: T[]): T[] => {
   const targetSet = new Set(arr2);
